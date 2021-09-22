@@ -1,0 +1,12 @@
+/* The switch - the box around the slider */
+.body{
+  width: 150px;
+  background-color: white;
+  border: #ffa500 solid;
+  border-width: thick;
+}
+
+p{
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+}

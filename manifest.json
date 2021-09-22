@@ -1,0 +1,27 @@
+{
+    "name" : "TimeSkip",
+    "version" : "1.2.0",
+    "description" : "Skips you to the title card in OnePiece on CrunchyRoll.",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.htm",
+        "default_icon": {
+        }
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.crunchyroll.com/*"],
+          "run_at": "document_end",
+          "all_frames": true,
+          "js": ["playback.js", "contentScript.js"]
+        }
+      ],
+    "permissions": ["activeTab", "declarativeContent", "storage", "tabs"],
+    "manifest_version" : 2,
+    "icons":{
+      "128": "TimeSkip 128x128.png"
+    }
+}
