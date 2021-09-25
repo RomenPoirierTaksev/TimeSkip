@@ -14,7 +14,6 @@ chrome.runtime.onMessage.addListener((msg,sender,response) =>{
         //console.log(msg.data)
         //console.log(minutes, seconds);
         videoPlayer.currentTime = minutes * 60 + seconds;
-        //chrome.runtime.sendMessage({name: "time", data: msg.data})
     }
 });
 
